@@ -1,5 +1,6 @@
 #include <stdio.h>
 //brakets {} : A Range of codes
+//tab: easier to read codes for users
 int main(){
     int i;
     for(i=0; i<10; i++){
