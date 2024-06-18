@@ -1,0 +1,9 @@
+#include <stdio.h>
+//We should use semicolons at the end of every sentence
+int main(){
+    int a;
+    a = a + 1;
+    if(a == 1){
+        printf("a = 1");
+    }
+}
