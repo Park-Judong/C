@@ -1,0 +1,31 @@
+#include <stdio.h>
+#include <math.h>
+
+int main()
+{
+    int num1 = 2;
+    int num2 = 3;
+    int num3;
+    int num4;
+    int num5 = 3;
+    int num6 = 4;
+    float num7 = 1.1f;
+    float num8 = 8.2f;
+    int num9;
+
+    num3 = num1++;    // num1의 값을 num3에 할당한 뒤 num1의 값을 1 증가시킴
+    num4 = --num2;    // num2의 값을 1 감소시킨 뒤 num2의 값을 1 감소시킴
+
+    num5 *= num1;
+    num6 /= num2;
+
+    num9 = num8;      // 8.1 ==> 8
+
+    printf("%d %d\n", num3, num4);      // 2 2
+    printf("%d %d\n", num5, num6);      // 9 2
+    printf("%d \n", num5 % num6);
+    printf("%f \n", fmodf(num8, num7));     
+    printf("%f %d\n", num8 / num2, num9);           // result: real number
+
+    return 0;
+}
