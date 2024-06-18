@@ -1,0 +1,15 @@
+#include <stdio.h>
+ 
+int main()
+{
+    char c1 = '0';    // charactor a
+    char c2 = 0;
+    char newline = '\n';
+ 
+    printf("%c, %d %c", c1, c1, newline);    // a, 97: a의 ASCII 코드값은 97
+    printf("%c, %d %c", c2, c2, newline);
+    printf("%c %d %c", 'a' + 1, 'a' + 1, newline);
+    printf("%c %d %c", 97 + 1, 97 + 1,newline);
+
+    return 0;
+}
