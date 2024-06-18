@@ -1,0 +1,29 @@
+#include <stdio.h>
+#include <float.h>
+
+int main(){
+    //sizeof()
+    //FLT_MIN/MAX, DBL_MIN/MAX   + #include <float.h>  : MIN/MAX positive number
+
+
+    float       num1 = 0.1f;
+    double      num2 = 385.20;
+    long double num3 = 9.22l;
+
+    printf("%f %f %Lf\n", num1, num2, num3);
+    
+    float       num4 = 3.e5f;           //e + number
+    double      num5 = -1.385e-2;
+    long double num6 = 9.22e+5l;        //e + (+/-) + number
+
+    float       num7 = FLT_MAX;            
+
+    printf("%f %f %Lf\n", num4, num5, num6);
+    printf("%e %e %Le\n", num4, num5, num6);
+
+    num1 = num1 / 1000000000000000000.0f;
+    num7 = num7 * 1000000.0f;
+
+    printf("%f %f\n", num1, num7);
+}
+///long double doesn't work
