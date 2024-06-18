@@ -1,0 +1,52 @@
+#include <stdio.h>
+#include <stdint.h>
+
+int main(){
+    //variable
+    //breakpoint
+    //data type: integer
+    //overflow & underflow
+    //sizeof()
+    //Maximum: CHAR_MAX, SHRT_MAX, INT_MAX
+    //Minimum: CHAR_MIN, LLONG_MIN, SHRT_MIN
+
+    char a = 128;               // 1 byte signed integer
+                                // -128 ~ 127
+    short b = 30000;            // 2 byte signed integer
+    int c = -1234567890;        // 4 byte signed integer
+    long d = 1234567890;        // 4 byte signed integer
+    long long e = -1234567890123456789;     // 8 byte signed integer
+
+    unsigned char f = 256;                          // 1 byte unsigned integer 
+                                                    // 0~255
+    unsigned short g = 60000;                       // 2 byte unsigned integer
+    unsigned int h = 4123456789;                 // 4 byte unsigned integer
+    unsigned long i = 4123456789;                // 4 byte unsigned integer
+    unsigned long long j = 12345678901234567890; // 8 byte unsigned integer
+
+    int num1 = 10, 
+        num2 = 22, 
+        num3 = num1 + num2;
+
+    int size1, size2;
+
+    int8_t x1 = -128;
+    int16_t x2 = 400;
+    uint16_t x3 = 65000;
+
+    printf("%d \n", num3);
+    printf("%d \n", num1);
+    printf("%d \n", num2);
+
+    printf("%d %d %d %ld %lld\n", a, b, c, d, e);       // a: overflow 
+    printf("%u %u %u %lu %llu\n", f, g, h, i, j);       // f: overflow
+
+    size1 = sizeof(num1);
+    size2 = sizeof(int);
+
+    prinf("%d %d\n", size1, size2);
+
+    printf("%d %d %u \n", x1, x2, x3);
+
+    return 0;
+}
