@@ -1,0 +1,52 @@
+#define _CRT_SECURE_NO_WARNINGS 
+#include <stdio.h>
+
+int main(){
+    
+    int num1 = 1;
+    int balance = 10000;    
+    int age;
+
+    scanf("%d", &age);
+    
+    if (num1 == 10)
+    {   
+        printf("if 조건문\n");
+        printf("10입니다.\n");
+    }
+    else if(num1 == 15)
+        printf("else\n");
+        printf("10이 아닙니다.\n");     // always display
+
+    if (0)
+    {
+        printf("과연 출력될까?");    
+    }
+
+    if(1)
+    {
+        printf("if에 1이 들어가면 출력될까?");
+    }
+
+    if(num1 = 2)
+    {
+        printf("if 조건식에 num1에 2를 대입하면 출력될까? 응 됨. 조건식이 0만 아니면 무조건 참임");
+    }
+    //display the amount of money in a card
+    if(age > 18)
+    {
+        balance = balance - 1200;
+    }
+    else if(age > 12 && age < 19)
+    {
+        balance = balance - 720;
+    }
+    else
+    {
+        balance = balance - 450;
+    }
+
+    printf("%d\n", balance);
+
+    return 0;
+}
