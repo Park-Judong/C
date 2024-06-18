@@ -1,0 +1,16 @@
+#include <stdio.h>
+//comment
+int main(){
+/*
+    We
+    Can
+    Do
+    It
+*/
+
+    int a;
+    a = a + 1;              // a Accumulation
+    if(a == 1){ 
+        printf("a = 1");    // a = 1 display
+    }
+}
